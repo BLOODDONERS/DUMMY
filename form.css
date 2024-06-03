@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ffcccc, #ff6666);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-y: auto; /* Ensure vertical scrolling */
+    position: relative;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Add some transparency to see the background image */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    input, select, button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.blood-drop {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle at 50% 50%, #ff3333, #cc0000);
+    border-radius: 50% 50% 0 50%;
+    transform: rotate(225deg); /* Rotated by 180 degrees */
+}
+
+.blood-drop:nth-child(2) {
+    top: 60px;
+    left: 80px;
+    width: 70px;
+    height: 70px;
+}
+
+.blood-drop:nth-child(3) {
+    top: 200px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+}
+
+.blood-drop:nth-child(4) {
+    top: 120px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.blood-drop:nth-child(5) {
+    top: 300px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.blood-drop:nth-child(6) {
+    top: 400px;
+    left: 200px;
+    width: 90px;
+    height: 90px;
+}
+
+.blood-drop:nth-child(7) {
+    top: 500px;
+    right: 150px;
+    width: 60px;
+    height: 60px;
+}
+
+.blood-drop:nth-child(8) {
+    top: 50px;
+    right: 200px;
+    width: 40px;
+    height: 40px;
+}

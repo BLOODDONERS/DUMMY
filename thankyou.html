@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .thank-you-message {
+            margin-top: 100px;
+            font-size: 24px;
+            color:green;
+            position: relative;
+        }
+
+        .firecracker {
+            position: absolute;
+            animation: explode 2s ease-in-out infinite;
+        }
+
+        .rocket {
+            position: absolute;
+            animation: fly 2s ease-in-out infinite;
+            transform-origin: bottom;
+        }
+
+        @keyframes explode {
+            0% { transform: translateY(0) rotate(0); opacity: 0; }
+            25% { transform: translateY(-10vw) rotate(90deg); opacity: 1; }
+            50% { transform: translateY(-20vw) rotate(180deg); }
+            75% { transform: translateY(-10vw) rotate(270deg); }
+            100% { transform: translateY(0) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes fly {
+            0% { transform: translateY(0) rotate(0); opacity: 0; }
+            50% { transform: translateY(-40vw) rotate(-90deg); opacity: 1; }
+            100% { transform: translateY(-80vw) rotate(-180deg); opacity: 0; }
+        }
+
+        @keyframes flash {
+            0% { color: #ff0000; }
+            50% { color: #ffffff; }
+            100% { color: #ff0000; }
+        }
+
+        .flash {
+            animation: flash 1s infinite;
+        }
+        .return-home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.return-home-btn:hover {
+    background-color: #3f2edb;
+}
+
+    </style>
+</head>
+<body>
+    <div class="thank-you-message">
+        <h1>Thank you, <span id="name"></span>! Your registration has been submitted successfully.</h1>
+        <p class="flash">Thank you for your generous contribution!</p>
+    </div>
+    <div class="thank-you-message">
+
+        <a href="form.html" class="return-home-btn">Return Home</a>  
+        <!-- we can give the target  html file  -->
+    </div>
+    
+    <div class="firecracker" style="top: 20%; left: 10%; width: 2vw; height: 2vw; background-color: #f00; border-radius: 50%;"></div>
+    <div class="firecracker" style="top: 40%; left: 30%; width: 2vw; height: 2vw; background-color: #f00; border-radius: 50%;"></div>
+    <div class="firecracker" style="top: 60%; left: 50%; width: 2vw; height: 2vw; background-color: #f00; border-radius: 50%;"></div>
+    <div class="firecracker" style="top: 80%; left: 70%; width: 2vw; height: 2vw; background-color: #f00; border-radius: 50%;"></div>
+    <div class="firecracker" style="top: 100%; left: 90%; width: 2vw; height: 2vw; background-color: #f00; border-radius: 50%;"></div>
+
+    <!-- Rockets -->
+    <div class="rocket" style="top: 30%; left: 15%; width: 10px; height: 30px; background-color: #f00;"></div>
+    <div class="rocket" style="top: 60%; left: 40%; width: 10px; height: 30px; background-color: #f00;"></div>
+    <div class="rocket" style="top: 50%; left: 70%; width: 10px; height: 30px; background-color: #f00;"></div>
+    <div class="rocket" style="top: 70%; left: 25%; width: 10px; height: 30px; background-color: #f00;"></div>
+    <div class="rocket" style="top: 90%; left: 80%; width: 10px; height: 30px; background-color: #f00;"></div>
+</body>
+</html>
